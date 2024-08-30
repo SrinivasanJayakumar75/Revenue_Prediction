@@ -1,0 +1,36 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-image:url("{%static 'download.jpg'%}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        input[type=submit]{
+            background-color: blue;
+            color:white;
+            cursor:pointer;
+            padding: 10px 20px;
+        }
+       
+    </style>
+</head>
+<body style="text-align: center; margin-top: 90px;">
+
+    <h1>Welcome To</h1>
+
+    <h1>Revenue Prediction System</h1>
+    <form action = "predict">
+        <input type = "submit" value = "START">
+
+    </form>
+
+</body>
+</html>

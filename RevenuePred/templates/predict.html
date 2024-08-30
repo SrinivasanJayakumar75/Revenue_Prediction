@@ -1,0 +1,113 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+        .main{
+            position:fixed;
+            top:67px;
+            left:410px;
+            width:700px;
+            background-color:gainsboro;
+            align-items:center;
+            border-radius:5%;
+            text-align: center;
+        }
+        div{
+            padding:15px;
+        }
+    body{
+        background-image: url("{%static 'download.jpg'%}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    input[type=submit]{
+            background-color: blue;
+            color:white;
+            cursor:pointer;
+            padding: 10px 20px;
+        }
+   
+</style>
+<body>
+    <div class="main">
+        <h1>Enter the following values</h1>
+        <form action="result">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>NumDealsPurchases</p>
+                    <input type="text" name="n1">
+                </div>
+                <div class="col-sm-4">
+                    <p>Education</p>
+                    <input type="text" name="n2">
+                </div>
+                <div class="col-sm-4">
+                    <p>Kidhome</p>
+                    <input type="text" name="n3">
+                </div>
+                <div class="col-sm-4">
+                    <p>NumWebPurchases</p>
+                    <input type="text" name="n4">
+                </div>
+                <div class="col-sm-4">
+                    <p>NumWebVisitsMonth</p>
+                    <input type="text" name="n5">
+                </div>
+                <div class="col-sm-4">
+                    <p>Year_Birth</p>
+                    <input type="text" name="n6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>Dt_Customer</p>
+                    <input type="text" name="n7">
+                </div>
+                <div class="col-sm-4">
+                    <p>MntGoldProds</p>
+                    <input type="text" name="n8">
+                </div>
+                <div class="col-sm-4">
+                    <p>MntFruits</p>
+                    <input type="text" name="n9">
+                </div>
+                <div class="col-sm-4">
+                    <p>MntSweetProducts</p>
+                    <input type="text" name="n10">
+                </div>
+                <div class="col-sm-4">
+                    <p>ID</p>
+                    <input type="text" name="n11">
+                </div>
+                <div class="col-sm-4">
+                    <p>MntMeatProducts</p>
+                    <input type="text" name="n12">
+                </div>
+                <div class="col-sm-4">
+                    <p>Income</p>
+                    <input type="text" name="n13">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="PREDICT">
+            </div>
+        </form>
+        <div class="row">
+            <h2>{{ result2 }}</h2>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
